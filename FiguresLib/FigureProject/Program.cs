@@ -37,7 +37,7 @@ namespace FigureProject
 
                         Figure triangle = new Triangle(sides[0], sides[1], sides[2]);
                         try {
-                            Console.WriteLine($"Triangle Square = {triangle.Square()}, IsRectangular {((Triangle)triangle).IsRectangular()}");
+                            Console.WriteLine($"Triangle Square = {Math.Round(triangle.Square()), 3}, IsRectangular {((Triangle)triangle).IsRectangular()}");
                         }
                         catch { }
                 }

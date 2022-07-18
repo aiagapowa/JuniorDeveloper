@@ -36,10 +36,13 @@ namespace FigureProject
                         Console.WriteLine($"Sides = {sides[0]}, {sides[1]}, {sides[2]}");
 
                         Figure triangle = new Triangle(sides[0], sides[1], sides[2]);
-                        Console.WriteLine($"Triangle Square = {triangle.Square()}, IsRectangular {((Triangle)triangle).IsRectangular()}");
-                    }
+                        try {
+                            Console.WriteLine($"Triangle Square = {triangle.Square()}, IsRectangular {((Triangle)triangle).IsRectangular()}");
+                        }
+                        catch { }
+                }
             }
-                Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }
